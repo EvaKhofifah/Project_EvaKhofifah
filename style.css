@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  background-color: #0040ff;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 8vh;
+}
+
+nav .logo {
+  /* font-family: 'Pacifico', cursive; */
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 244, 248);
+}
+
+/* bagian about */
+#box1 {
+  padding: 10px;
+  background-color: #0040ff;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+
+.judul {
+  background-color: #0040ff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  padding: 3vh 5vh;
+  text-align: center;
+  background-color: white;
+}
+
+.container p {
+  margin-top: 10px;
+}
+/* akhir about */
+
+/* awal experiences */
+#box2 {
+  margin: 20px;
+  padding: 10px;
+  background-color: #0040ff;
+}
+
+.container2 {
+  padding: 3vh 5vh;
+  background-color: white;
+  display: flex;
+}
+
+.pengalaman {
+  padding: 25px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.pengalaman.satu {
+  background-color: white;
+  border: 3px dotted #0040ff;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.pengalaman.dua {
+  background-color: white;
+  border: 3px dotted #0040ff;
+  width: 50%;
+  margin-left: 10px;
+}
+/* akhir experiences */
+
+/* awal  education */
+#box3 {
+  margin: 20px;
+  padding: 10px;
+  background-color: #0040ff;
+}
+
+.pendidikan.satu {
+  border: 3px dotted #0040ff;
+  padding: 15px;
+}
+
+.pendidikan.dua {
+  border: 3px dotted #0040ff;
+  padding: 15px;
+}
+/* akhir education */
+
+/* awal skill */
+#box4 {
+  margin: 20px;
+  padding: 10px;
+  background-color: #0040ff;
+}
+
+.container-skill {
+  padding: 3vh 5vh;
+  text-align: center;
+  background-color: white;
+  max-width: 100%;
+  margin: 0px 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50%;
+  margin: 10px;
+}
+
+.thumbnail img {
+  width: 42%;
+}
+/* akhir skill */
+
+/* awal interest */
+#box5 {
+  margin: 20px;
+  padding: 10px;
+  background-color: #0040ff;
+}
+
+.container-interest {
+  padding: 3vh 5vh;
+  text-align: center;
+  background-color: white;
+  max-width: 100%;
+  margin: 0px 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.display {
+  width: 30%;
+  margin: 10px;
+}
+
+.display img {
+  width: 40%;
+  border-radius: 100%;
+  border: 1px groove;
+}
+/* akhir interest */
+
+/* awal award */
+#box6 {
+  margin: 20px;
+  padding: 10px;
+  background-color: #0040ff;
+}
+
+.container-award {
+  padding: 3vh 5vh;
+  text-align: center;
+  background-color: white;
+  max-width: 100%;
+  margin: 0px 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.award {
+  width: 50%;
+  margin: 10px;
+}
+
+.award img {
+  width: 60%;
+}
+/* akhir award */
+
+footer {
+  text-align: center;
+  padding-top: 8px;
+  background-color: #0040ff;
+  color: white;
+}
+
+footer a {
+  color: white;
+  font-size: 12px;
+}
+
+footer p {
+  color: white;
+  font-size: 13px;
+}
+
+/* hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0.1%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* reponsive */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0040ff;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
